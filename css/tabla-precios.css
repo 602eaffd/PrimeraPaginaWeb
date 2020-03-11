@@ -2,3 +2,90 @@
     margin: 0% auto;
     width: 90%;
 }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+    /* para volver delgada la letra */
+    font-weight: 400;
+}
+
+p{
+    /* para volver delgada la letra */
+    font-weight: 300;
+}
+
+/* una al lado de la otra columna */
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* centrar textos */
+.text-center{
+    text-align: center;
+}
+
+
+.columna-div{
+    /* agregar fondo a cada columna*/
+    background: rgb(228, 228, 228);
+    /* color al texto */
+    color: #333;
+    border: 1px solid #333;
+    /* es para que tome margin y padding auto */
+    margin: 0 auto;
+    padding:10px;
+    border-radius: 5px;
+    /*Arriba izquierda box-shadow:-10px -10px red; */
+    box-shadow:5px 5px 5px #333;
+    /* es para que tome margin y padding auto */
+    width: 24%;
+    /* es para que tome margin y padding auto */
+    box-sizing:border-box;
+}
+
+/* personalizar precios */
+.precio{
+    font-size: 25px;
+    color: #00dac7;;
+}
+
+/* cambiar propiedades del btn precio */
+.btn-precio{
+    background: salmon;
+    /* convertir linea en bloque */
+    display: block;
+    /* quitar subrayado */
+    text-decoration: none;
+    padding: 10px;color: #fff;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+/* cuando paso el mouse por encima */
+.btn-precio:hover{
+ background: rgb(250, 100, 84);
+}
+
+/* cuando este presionando tendra estas caracteristicas */
+.btn-precio:active{
+    background: #fe346e;
+}
+
+/* Hasta maximo 1070px toma estas caracteristicas*/
+
+@media (max-width: 1070px){
+    .columna-div{
+        width: 45%;
+        margin-bottom: 10px;
+    }
+}
+/* Hasta maximo 600px toma estas caracteristicas */
+@media (max-width: 600px){
+    .columna-div{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
