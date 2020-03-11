@@ -1,0 +1,16 @@
+/* cuando no este selecionado tendra estas caracteristicas */
+
+button{
+    background: #481380;
+    color: #efb1ff;
+}
+/* cuando este pasando por encima tendra estas caracteristicas */
+button:hover{
+    background:#7f78d2 ;
+}
+
+/* cuando este presionando tendra estas caracteristicas */
+
+button:active{
+    background: #fe346e;
+}

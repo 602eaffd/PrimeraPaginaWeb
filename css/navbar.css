@@ -1,0 +1,50 @@
+.nav-enlace{
+    /* las anclas son bloques */
+    display:inline-block;
+    /* las anclas son bloques */
+    background: salmon;
+    color: #fff;
+    padding: 10px 30px;
+    margin:3px;
+    text-decoration: none;
+}
+
+.nav-enlace:hover{
+    background: rosybrown;
+}
+
+nav{
+    background: rebeccapurple;
+    padding: 10px;
+    /* uno al lado del otro  */
+    display: flex;
+    /* espacio entre cada (a) */
+    justify-content: space-around;
+}
+
+.nav-botton{
+    background: salmon;
+    color: #fff;
+    padding: 10px 0px;
+    /* linea solid(linea solida del cuadro del boton) */
+    border: 2px solid #fff;
+    display: none;
+}
+
+/* Cuando maximo tenga 600px vamos a generar diferentes efectos */
+@media (max-width: 600px){
+    nav{
+        background: black;
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin:10px 0px;
+    }
+    .nav-botton{
+        display: inline-block;
+    }
+    .desaparece{
+        display: none;
+    }
+}
+

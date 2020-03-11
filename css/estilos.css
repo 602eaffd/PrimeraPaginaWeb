@@ -1,3 +1,35 @@
   h2{
       color:blue
   }
+
+  h1{
+      color: rgb(9, 116, 57);
+      font-size: 50px;
+      background: #131; 
+      /* margin-left: 100px;
+      margin-bottom: 200px;
+      margin-right: ; */
+      /* margin:100px; */
+      /* margin:200px 100px; */
+      /* a, dere, abaj, izq */
+      /* externo */
+      margin: 100px 10px 35px 50px;
+ }
+
+ #unico{
+  color: rgb(179, 0, 0);
+  font-size: 50px;
+ }
+
+ .azul{
+   color: rgb(206, 9, 108);
+ }
+
+ .fondo{
+   background: #444;
+ }
+
+ p{
+   /* interno */
+   padding: 100px;
+ }

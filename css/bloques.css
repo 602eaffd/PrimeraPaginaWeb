@@ -1,0 +1,9 @@
+h1{
+    background: chocolate;
+    display: inline-block;
+}
+
+a{
+    background: chocolate;
+    display: block;
+}

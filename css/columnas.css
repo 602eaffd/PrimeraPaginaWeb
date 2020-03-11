@@ -1,0 +1,16 @@
+nav{
+    background:#ffa372;
+    padding: 20px;
+    
+}
+
+.columna{
+    background: #0f4c81 ;
+    padding: 20px;
+    width: 25%;
+    margin: 10px;
+}
+/* se posiciona una al lado del otro */
+.padre{
+    display: flex;
+}
