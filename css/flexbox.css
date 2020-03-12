@@ -1,0 +1,46 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.contenedor{
+    /* ancho */
+    width: 80%;
+    /* altura */
+	/* height: 500px; */
+	background: #FF5C29;
+    margin: 50px auto;
+    /*uno al lado del otro*/	
+    display: flex;
+    /* poner al reves
+    flex-direction: row-reverse;
+    */
+    /* tener en cuenta para responsive, tamaño pa cel, row para web */
+    flex-direction: row;
+    /* Al ocupar el width, se hace una fila debajo */
+    flex-wrap: wrap;
+    /* Llevar los elementos a la derecha o fin del contenedor horizontal */
+    /* justify-content: flex-end; */
+    /* Centrar horizontalmente */
+    /* justify-content: center; */
+    /* centrado bonito */
+    justify-content: space-around;
+    /* centrar verticalmente */
+    align-items: center;
+    /* Alinear al principio o final vertical */
+    align-content: flex-start;
+
+
+}
+.hijo{
+	background: #00B285;
+	width: 200px;
+	height: 100px;
+	color:#fff;
+	margin: 30px;
+	padding: 20px;
+	font-size: 40px;
+	text-align: center;
+}

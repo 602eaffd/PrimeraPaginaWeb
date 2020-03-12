@@ -1,0 +1,57 @@
+.padre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+}
+.header, .article, .izquierda, .derecha, .footer{
+    /* para que abarque el 100% */
+    flex-grow: 1;
+    /* al cambiar de dispositivo se necesita que el hijo ocupe el 100% */
+     flex-basis: 100%;
+    padding: 10px;
+}
+
+.header{
+    background: red;
+}
+
+.izquierda{
+    background: blue;
+}
+
+.derecha{
+    background: black;
+    color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.footer{
+    background: magenta;
+}
+
+/* cuando tenga 600px o mas va a tomar estas caracteristicas */
+@media all and (min-width:600px){
+    .aside{
+        /* al pasar los 600px izq y derecha ocupanla misma linea pero con su 100% del tamaño */
+        flex: 1 1 auto;
+    }
+}
+
+@media all and (min-width: 800px){
+    .articulo{
+        flex:2 0;
+        order: 2;
+    }
+    .izquierda{
+        order: 1;
+    }
+    .derecha{
+        order: 3;
+    }
+    .footer{
+        order: 4;
+    }
+   }
